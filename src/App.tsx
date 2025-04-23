@@ -8,7 +8,7 @@ function App() {
   const [menuOpen, setMenuOpen] = useState(false)
 
   return (
-    <div className='color-red-850'>
+    <div className='bg-gray-200'>
       {/* Header start */}
       <div className='w-full bg-yellow-500'>
         <div className='flex items-center justify-between px-16 py-10'>
@@ -21,12 +21,12 @@ function App() {
           </a>
 
           {/* Desktop Menu */}
-          <nav className='hidden md:flex space-x-12 text-white font-semibold'>
+          <div className='hidden md:flex space-x-12 ml-99 text-white font-semibold'>
             <a href="https://www.lejhro.com/innovations">Innovation</a>
             <a href="https://www.lejhro.com/innovations">Business Services</a>
             <a href="https://www.lejhro.com/innovations">Financial Services</a>
             <a href="https://www.lejhro.com/innovations" target="_blank" rel="noreferrer">Bootcamp</a>
-          </nav>
+          </div>
 
           {/* Hamburger Icon */}
           <button
@@ -41,7 +41,7 @@ function App() {
 
         {/* Mobile Menu */}
         {menuOpen && (
-          <div className=' px-16 pb-4 flex flex-col space-y-4 text-white font-medium'>
+          <div className=' px-16 pb-4 flex items-end flex-col space-y-4 text-white font-medium'>
             <a href="https://www.lejhro.com/innovations">Innovation</a>
             <a href="https://www.lejhro.com/innovations">Business Services</a>
             <a href="https://www.lejhro.com/innovations">Financial Services</a>
@@ -79,7 +79,7 @@ function App() {
       {/* Header end */}
 
       {/* Body Start */}
-      <div className='ml-50 mt-5 mr-50 mb-10 bg-white-300 border border-gray-200 rounded-[12px]'>
+      <div className='ml-50 bg-white mt-5 mr-50 mb-10 bg-white-300 border border-gray-200 rounded-[12px]'>
       <div className="max-w-4xl mx-auto">
           <h1 className="text-3xl md:text-4xl font-bold text-[#333] mb-6">Statistical Approaches for Balancing Ethical Privacy & Data-Driven Innovation</h1>
           <img src={blog} alt="BlogImage" className='mb-3' />
